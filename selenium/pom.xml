@@ -112,6 +112,9 @@
 </goals>
 <configuration>
 <mainClass>selenium.Snapdeal</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.FluentWaitDemo</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.ExplictWait</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Explicit</mainClass> <!-- Replace with your actual main class -->
 </configuration>
 </execution>
 </executions>
