@@ -120,8 +120,10 @@
 <mainClass>selenium.Select1</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Select2</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.JSExecuator</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Leaf2</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.WebElementActions</mainClass> <!-- Replace with your actual main class -->
 </configuration>
-</execution>
+</execution> 
 </executions>
 </plugin>
 
