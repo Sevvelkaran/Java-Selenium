@@ -1,6 +1,7 @@
 package selenium;
 
 import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
@@ -78,15 +79,15 @@ public class Releative_locators {
 		//FileHandler.copy(source, new File("/Users/sevvelkaranpalanivetrivel/Desktop/EXPLEO"+System.currentTimeMillis()+"png"));
 		
 		//System.out.println("Taken");
-		
-		try {
-			WebElement logo = driver.findElement(By.xpath("//img[@alt='client brand banner']"));
-			File source = ((TakesScreenshot)logo).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(source, new File("/Users/sevvelkaranpalanivetrivel/Desktop/EXPLEO"+System.currentTimeMillis()+".png"));
-			
-		} catch(IOException e) {
-			e.printStackTrace();
-		}
+//		
+//		try {
+//			WebElement logo = driver.findElement(By.xpath("//img[@alt='client brand banner']"));
+//			File source = ((TakesScreenshot)logo).getScreenshotAs(OutputType.FILE);
+//			FileUtils.copyFile(source, new File("/Users/sevvelkaranpalanivetrivel/Desktop/EXPLEO"+System.currentTimeMillis()+".png"));
+//			
+//		} catch(IOException e) {
+//			e.printStackTrace();
+//		}
 		
 		logdown.click();
 		
