@@ -6,14 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Leaf2 {
-    
     public static void main(String[] args) {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("--headless");
+		WebDriver driver = new ChromeDriver(option);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://leafground.com/select.xhtml");
 
