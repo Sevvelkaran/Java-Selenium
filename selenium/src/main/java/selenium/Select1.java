@@ -48,7 +48,7 @@ public class Select1 {
 			optionTextList.add(option1.getText());
 		}
 		
-		Collections.sort(optionTextList);
+		//Collections.sort(optionTextList);
 		System.out.println(optionTextList);
 		
 		driver.quit();
