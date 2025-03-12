@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Leaf2 {
+    
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
