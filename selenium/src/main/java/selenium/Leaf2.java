@@ -11,11 +11,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Leaf2 {
-    public static void main(String[] args) {
-        ChromeOptions option = new ChromeOptions();
+
+    public static void main(String[] args) throws InterruptedException {
+           ChromeOptions option = new ChromeOptions();
         option.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(option);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+  
+ 
         driver.get("https://leafground.com/select.xhtml");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -47,6 +50,15 @@ public class Leaf2 {
                 break;
             }
         }
+
+        
+        WebElement Course = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='ui-button-icon-primary ui-icon ui-icon-triangle-1-s']")));
+        Course.click();
+        
+        WebElement Course1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[text()='Selenium WebDriver']")));
+        Course1.click();
+        
+        System.out.println(Course1.getDomAttribute("data-item-value"));
 
         driver.quit();
     }
