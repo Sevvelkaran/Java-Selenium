@@ -1,6 +1,7 @@
 package selenium;
 
 import java.time.Duration;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -38,7 +39,7 @@ public class Select1 {
 			System.out.println(lss.getText());
 		}
 
-		obj.deselectByIndex(0);
+		obj.deselectByIndex(1);
 		obj.deselectAll();
 		
 		List<WebElement> options = obj.getOptions();
