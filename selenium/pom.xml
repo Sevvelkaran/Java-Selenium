@@ -117,6 +117,7 @@
 <mainClass>selenium.Explicit</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.leafground</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Select</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Select1</mainClass> <!-- Replace with your actual main class -->
 </configuration>
 </execution>
 </executions>
