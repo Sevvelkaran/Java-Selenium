@@ -33,6 +33,11 @@ public class NewWindow2 {
         }
 
         driver.switchTo().window(parentWindow);
+        WebElement multipletabs=driver.findElement(By.xpath("//span[text()='Open Multiple']"));
+        multipletabs.click();
+        Set<String> multiple=driver.getWindowHandles();
+        System.out.println(multiple.size());
+
 
 
     }
