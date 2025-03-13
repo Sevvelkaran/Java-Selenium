@@ -24,7 +24,7 @@ public class Action4 {
 		WebElement jqueryurllink = driver.findElement(By.linkText("jqueryui"));
 		action.keyDown(Keys.CONTROL).moveToElement(jqueryurllink).click().keyUp(Keys.CONTROL).build().perform();
 		
-		//driver.quit();
+		driver.quit();
 	}
 
 }
