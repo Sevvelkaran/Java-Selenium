@@ -13,9 +13,9 @@ public class Action4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ChromeOptions option = new ChromeOptions();
-        option.addArguments("--headless");
-		WebDriver driver = new ChromeDriver(option);
+		//ChromeOptions option = new ChromeOptions();
+        //option.addArguments("--headless");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://omayo.blogspot.com/");
 		
