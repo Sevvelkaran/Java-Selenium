@@ -28,6 +28,8 @@ public class NewWindow3 {
 	        WebElement revlead = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Open with delay']")));
 	        revlead.click();
 		
+	        
+	        driver.quit();
 	}
 
 }
