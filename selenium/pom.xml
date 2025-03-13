@@ -125,6 +125,8 @@
 <mainClass>selenium.Action2</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Action3</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Window</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.NewWindow</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.NewWindow2</mainClass> <!-- Replace with your actual main class -->
 </configuration>
 </execution> 
 </executions>

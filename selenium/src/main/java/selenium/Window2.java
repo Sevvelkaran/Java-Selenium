@@ -18,7 +18,7 @@ public class Window2 {
 
         String parentWindow = driver.getWindowHandle();
         System.out.println("Parent window handle: " + parentWindow);
-        driver.findElement(By.id("selenium143")).click();
+        //driver.findElement(By.id("selenium143")).click();
         driver.findElement(By.linkText("Open a popup window")).click();
 
         Set<String> allWindowHandles = driver.getWindowHandles();
