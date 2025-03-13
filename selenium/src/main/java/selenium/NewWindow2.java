@@ -8,29 +8,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NewWindow {
+public class NewWindow2 {
 
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-        driver.get("https://leafground.com/window.xhtml;jsessionid=node018rbb6lehc9i111lxwg546fde38926540.node0");
-
+        
+        driver.get("https://leafground.com/window.xhtml");
+        
         String parentWindow = driver.getWindowHandle();
         System.out.println("Parent window handle: " + parentWindow);
 
-        WebElement open = driver.findElement(By.xpath("//span[text()='Open']"));
+        WebElement open = driver.findElement(By.xpath("//span[text()='Close Windows']"));
         open.click();
 
         Set<String> allWindows = driver.getWindowHandles();
-
-        if (allWindows.size() > 1) {
-            System.out.println("New window has opened successfully.");
-        } else {
-            System.out.println("No new window opened.");
+        
+        for (String window : allWindows) {
+            if (!window.equals(parentWindow)) {
+                driver.switchTo().window(window);
+                driver.close();  
+            }
         }
 
-        driver.quit();
+        driver.switchTo().window(parentWindow);
+
+
     }
 }
