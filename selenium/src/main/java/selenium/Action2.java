@@ -19,7 +19,7 @@ public class Action2 {
 		Actions action = new Actions(driver);
 		
 		WebElement search = driver.findElement(By.xpath("//input[@name='q']"));
-		action.contextClick(search).perform();
+		action.doubleClick(search).perform();
 		
 	}
 
