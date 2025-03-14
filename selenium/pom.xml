@@ -129,6 +129,9 @@
 <mainClass>selenium.NewWindow2</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Checkbox</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Frames</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Frames1</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Frames2</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Frames3</mainClass> <!-- Replace with your actual main class -->
 </configuration>
 </execution> 
 </executions>
