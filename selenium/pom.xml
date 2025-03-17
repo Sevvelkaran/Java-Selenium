@@ -133,6 +133,7 @@
 <mainClass>selenium.Frames2</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Frames3</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Alert</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.Calander</mainClass> <!-- Replace with your actual main class -->
 </configuration>
 </execution> 
 </executions>
