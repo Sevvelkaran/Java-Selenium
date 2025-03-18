@@ -136,6 +136,8 @@
 <mainClass>selenium.Alert</mainClass> <!-- Replace with your actual main class -->
 
 <mainClass>selenium.Calander</mainClass> <!-- Replace with your actual main class -->
+<mainClass>selenium.JsDemo</mainClass> <!-- Replace with your actual main class -->
+
 <mainClass>selenium.Table</mainClass>
 
 </configuration>
