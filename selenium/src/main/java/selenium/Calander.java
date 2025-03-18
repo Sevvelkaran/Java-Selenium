@@ -3,6 +3,7 @@ package selenium;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +20,14 @@ public class Calander {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		
 		WebElement dp = driver.findElement(By.xpath("//input[@id='datepicker']"));
-		dp.click();
+		typedate(driver, dp, "03/07/2003");
 		
-		String CurrentMonth = driver.findElement(By.className("ui-datepicker-month")).getText();
-		String CurrentYear = driver.findElement(By.className("ui-datepicker-year")).getText();
+		
+		
+	}
+	public static void typedate(WebDriver driver, WebElement element, String text) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("arguments[0].value='"+text"'");
 		
 		
 	}

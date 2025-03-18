@@ -15,18 +15,17 @@ public class Explicit {
 public static void main(String[] args) throws InterruptedException {
 WebDriver driver=new ChromeDriver();
 WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(5)); 
+
 driver.manage().window().maximize();
 driver.get("https://www.selenium.dev/selenium/web/dynamic.html");
 
-//WebElement timerbutton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='Stats1_totalCount']")));
-//timerbutton.click();
+
 
 WebElement reveal = driver.findElement(By.xpath("//input[@id='reveal']"));
 reveal.click();
 
 WebElement revlead = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='revealed']")));
 revlead.sendKeys("Hello");
-//WebElement revlead1 = wait.until(ExpectedConditions.textToBePresentInElementLocated(revlead1));
 System.out.println(revlead.getDomAttribute("id"));
 
 System.out.println(revlead.getDomProperty("value"));
