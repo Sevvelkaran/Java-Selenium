@@ -7,6 +7,7 @@
   <artifactId>selenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+  
   <name>selenium</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -139,6 +140,8 @@
 <mainClass>selenium.Flash</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.NewWindowDemo</mainClass> <!-- Replace with your actual main class -->
 <mainClass>selenium.Table3</mainClass> <!-- Replace with your actual main class -->
+  
+  
 </configuration>
 </execution> 
 </executions>
